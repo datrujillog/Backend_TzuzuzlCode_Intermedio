@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development node index.js",
-    "dev": "cross-env NODE_ENV=development npx nodemon index.js"
+    "start": "cross-env NODE_ENV=development node server.js",
+    "dev": "cross-env NODE_ENV=development npx nodemon ./bin/server.js"
   },
   "author": "Diego Trujillo",
   "license": "ISC",
@@ -13,7 +13,9 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "cross-env": "^7.0.3",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
   }
 }

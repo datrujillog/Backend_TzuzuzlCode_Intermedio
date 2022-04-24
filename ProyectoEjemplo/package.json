@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development node server.js",
+    "start": "cross-env NODE_ENV=produccion node ./bin/server.js",
     "dev": "cross-env NODE_ENV=development npx nodemon ./bin/server.js"
   },
   "author": "Diego Trujillo",

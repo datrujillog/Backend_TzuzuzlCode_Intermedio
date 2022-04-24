@@ -2,14 +2,16 @@ const {port} = require('./config/index');
 const express = require('express');
 // const {} = require('./server/server');
 
-const routas = require('./router/zuzulRoute');
+const router = require('./router/index');
 
 const app = express();
 
+// todo: middleware para leer el body de la peticion 
+app.use(express.json());
 
-app.use('/app',routas);
+app.use(router);
 
-
+ 
 
 
 

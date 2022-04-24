@@ -8,8 +8,9 @@ const app = require('../index');
 
 console.log('')
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`.bgBlue.white);
-    console.log(`Server is running on http://localhost:${port}/app`.bgBrightYellow);
+    console.log(`Server is running on port ${port}`.bgBrightYellow);
+    console.log(`Server is running on http://localhost:${port}/tzuzul`.bgBlue.white);
+    console.log(`Server is running on http://localhost:${port}/tzuzul`.bgRed.white);
 })
 // bgBlue.white
 
